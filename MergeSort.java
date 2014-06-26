@@ -25,11 +25,8 @@
 	         
 	        if (lowerIndex < higherIndex) {
 	            int middle = lowerIndex + (higherIndex - lowerIndex) / 2;
-	            // Below step sorts the left side of the array
 	            doMergeSort(lowerIndex, middle);
-	            // Below step sorts the right side of the array
 	            doMergeSort(middle + 1, higherIndex);
-	            // Now merge both sides
 	            mergeParts(lowerIndex, middle, higherIndex);
 	        }
 	    }
