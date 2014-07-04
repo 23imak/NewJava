@@ -6,11 +6,10 @@ public class Quicksort {
 		this.inputArr = values;
 	}
 	public void sort(int[] inputArr) {
-	int[] array;
+	
         if (inputArr == null || inputArr.length == 0) {
             return;
         }
-        this.array = inputArr;
         int length = inputArr.length;
         quicksort(0, length - 1);
     }
