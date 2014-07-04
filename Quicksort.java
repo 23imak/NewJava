@@ -1,12 +1,12 @@
 public class Quicksort {
-	private int[] numbers;
-	private int[] array;
+	private int[] inputArr;
+
 
 	public Quicksort(int[] values) {
-		this.numbers = values;
+		this.inputArr = values;
 	}
 	public void sort(int[] inputArr) {
-        
+	int[] array;
         if (inputArr == null || inputArr.length == 0) {
             return;
         }
