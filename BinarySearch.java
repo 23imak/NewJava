@@ -1,6 +1,5 @@
 
 public class BinarySearch {
-	private int first, last, middle, n, search;
 	private int[] array;
 
 	public BinarySearch(int[] values) {
@@ -10,7 +9,7 @@ public class BinarySearch {
 		searchNumber(array);
 	}
 	private int searchNumber(int[] array) {
-
+		int first,last,middle,n = 0, search = 0;
 		first = 0;
 		last = n - 1;
 		middle = (first + last) / 2;
@@ -28,8 +27,7 @@ public class BinarySearch {
 		if (first > last)
 		
 		{
-			int flag = 1;
-			return flag;
+			return -1;
 		}
 		return 0;
 
